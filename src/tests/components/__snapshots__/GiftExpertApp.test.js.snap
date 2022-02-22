@@ -15,11 +15,6 @@ exports[`SE prueba la carga de los componentes Se prueba la carga de los compone
     Reset
   </button>
   <hr />
-  <ol>
-    <GifGrid
-      category="cats"
-      key="cats"
-    />
-  </ol>
+  <ol />
 </Fragment>
 `;

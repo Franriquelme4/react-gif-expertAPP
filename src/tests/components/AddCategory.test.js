@@ -26,4 +26,21 @@ describe("Pruebas en el archivo AddCategory", () => {
        wrapper.find('form').simulate('submit',{preventDefault(){}});
     expect(setCategories).not.toHaveBeenCalled;
     })
+
+    test('Debe de llamar el setCategories y llamar la caja de texto', () => { 
+        // 1/ simular el inputChange
+        // 2/ simular el Submit
+        // 3/setCategories se dede de haber llamado 
+        // 3/ el valor de input debe de estar vacio 
+
+        const input = wrapper.find('input');
+        const value = 'cat';
+        input.simulate('change',{target:{value}});
+        wrapper.find('form').simulate('submit',{preventDefault(){}});
+        expect(setCategories).toHaveBeenCalled();
+        expect(input.text()).toBe('');
+
+     })
+
+
 });

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Se evalua en el componente GifGrid Se realiza el snapchot 1`] = `
+<Fragment>
+  <p
+    className="animate__animated animate__flash"
+  >
+    Loading...
+  </p>
+  <h3
+    className="animate__animated animate__fadeIn"
+  >
+    dog
+  </h3>
+  <div
+    className="img-container"
+  />
+</Fragment>
+`;

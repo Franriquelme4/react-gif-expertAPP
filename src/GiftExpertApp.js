@@ -3,8 +3,8 @@ import React from 'react';
 import AddCategory from "./components/AddCategory";
 import { GifGrid } from "./components/GifGrid";
 
-const GiftExpertApp = () => {
- const [categories,setCategories] = useState(['cats']);
+const GiftExpertApp = ({defaultCategory=[]}) => {
+ const [categories,setCategories] = useState(defaultCategory);
   return (
     <Fragment>
       <h2>GiftExpertApp</h2>
