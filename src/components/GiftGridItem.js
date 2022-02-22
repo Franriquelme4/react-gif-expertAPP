@@ -1,5 +1,5 @@
-import React from 'react'
-
+import React from 'react';
+import PropTypes from 'prop-types';
 export const GiftGridItem = ({title,url}) => {
   return (
     <div className='card animate__animated animate__fadeIn'>
@@ -8,3 +8,19 @@ export const GiftGridItem = ({title,url}) => {
     </div>
   )
 }
+
+GiftGridItem.propTypes = {
+  title:PropTypes.string.isRequired,
+  url:PropTypes.string.isRequired
+}
+
+ /*
+  installar enxyme
+  1) enzyme
+  2) enzyme json
+  3) debe mostrar el componente correctamente
+    *shallow
+    *wrapper
+    *wrapper . toMatchSnapshot
+ 
+ */

@@ -4,7 +4,7 @@ import AddCategory from "./components/AddCategory";
 import { GifGrid } from "./components/GifGrid";
 
 const GiftExpertApp = () => {
- const [categories,setCategories] = useState([]);
+ const [categories,setCategories] = useState(['cats']);
   return (
     <Fragment>
       <h2>GiftExpertApp</h2>
