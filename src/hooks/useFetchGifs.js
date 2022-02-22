@@ -4,7 +4,7 @@ import { getGifts } from "../helpers/getGifts";
 export const useFetchGifs = (category) => {
   const [state, setState] = useState({
     data: [],
-    loanding: true,
+    loading: true,
   });
   useEffect(()=>{
     getGifts(category)
@@ -12,7 +12,7 @@ export const useFetchGifs = (category) => {
             setTimeout(() => {
                 setState({
                     data:img,
-                    loanding:false
+                    loading:false
                 })
             }, 2000);
            
